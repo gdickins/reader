@@ -12,7 +12,7 @@ const App = React.createClass({
       </div>
     )
   }
-}
+})
 
 const router = (
   <Router history={hashHistory}>

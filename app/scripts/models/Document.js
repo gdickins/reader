@@ -7,6 +7,9 @@ export default Backbone.Model.extend({
   },
   toggleRead: function() {
     let readStatus = this.get('isRead');
-    this.set('isRead', !readStatus);
+    let confirmation = confirm("Update Read Status");
+    if(confirmation) {
+      this.set('isRead', !readStatus);
+    };
   }
 })
